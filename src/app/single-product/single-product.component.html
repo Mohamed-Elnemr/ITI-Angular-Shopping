@@ -1,0 +1,10 @@
+<div class="card col-xs-4" style="border:1px solid black;">
+  <img class="card-img-top" src="{{singleProduct.ProductPicUrl}}" alt="Card image cap" width="80px" height="80px">
+  <div class="card-body">
+    <h5 class="card-title"><a [routerLink]="['/product/',singleProduct.ID]" >{{singleProduct.Name}}</a></h5>
+    <p class="card-text">{{singleProduct.Description}}</p>
+    <p class="card-text">{{singleProduct.Price}} $$</p>
+    <a (click)="addToCart(singleProduct)" class="btn btn-primary">Add To Cart</a>
+  </div>
+</div>
+

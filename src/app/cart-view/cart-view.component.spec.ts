@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NavigationLinksComponent } from './navigation-links.component';
+import { CartViewComponent } from './cart-view.component';
 
-describe('NavigationLinksComponent', () => {
-  let component: NavigationLinksComponent;
-  let fixture: ComponentFixture<NavigationLinksComponent>;
+describe('CartViewComponent', () => {
+  let component: CartViewComponent;
+  let fixture: ComponentFixture<CartViewComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NavigationLinksComponent ]
+      declarations: [ CartViewComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NavigationLinksComponent);
+    fixture = TestBed.createComponent(CartViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

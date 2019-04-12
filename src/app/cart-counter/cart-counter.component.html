@@ -1,0 +1,28 @@
+
+
+<div ngbDropdown #myDrop="ngbDropdown">
+  <button class="btn btn-outline-primary mr-2" id="dropdownManual" ngbDropdownAnchor
+          (click)="myDrop.toggle()"
+          (click)="getCrtedProducts()">
+    Cart <span class="caret">{{count}}</span>
+  </button>
+  <div  aria-labelledby="dropdownManual card" ngbDropdownMenu>
+   <ul *ngFor="let product of products">
+     <li>
+       <div>
+         <img src="{{product.product.ProductPicUrl}}" width="14px" height="14px">
+         {{product.product.Name}}
+         {{product.product.Price}}$
+         {{product.quantity}}
+         <button (click)="removeFromCart(product)">X</button>
+       </div>
+     </li>
+     <hr>
+
+   </ul>
+    <button [routerLink]="['/cart']">View Cart</button>
+  </div>
+
+
+</div>
+
